@@ -34,7 +34,7 @@ int main() {
     for(int i=0; i<3; i++){
         printf("Inserisci i metri quadri della casa %d: ", i+1);
         scanf("%d", &case_vet[i].metri_quadri);
-        printf("Inserisci la classe energetica (A-F): ");
+            printf("Inserisci la classe energetica: ");
         scanf(" %c", &case_vet[i].classe);
         printf("Inserisci il costo in migliaia di euro: ");
         scanf("%f", &case_vet[i].k_euro);
@@ -45,9 +45,9 @@ int main() {
     printf("\nLa casa col minor costo al metro quadro è la casa %d: %.2f euro/mq\n", minPrezzo+1, case_vet[minPrezzo].prezzo_mq);
 
     int migliore = 0;
-    for (int i = 1; i < 3; i++) {
-        if (miglioreClasse(case_vet[i], case_vet[migliore])) {
-            migliore = i;
+    for(int i=1; i<3; i++){
+        if(miglioreClasse(case_vet[i], case_vet[migliore])){
+            migliore=i;
         }
     }
     printf("La casa con la migliore classe energetica è la casa %d (classe %c, %d mq, %.2f keuro)\n", migliore+1, case_vet[migliore].classe, case_vet[migliore].metri_quadri, case_vet[migliore].k_euro);
