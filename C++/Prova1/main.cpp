@@ -30,7 +30,9 @@ int main(){
     cout << "Contatore 1: " << c1.getValue() << "\n";
     cout << "Contatore 2: " << c2.getValue() << "\n";
 
-    c1.increase(7);
+    for(int i=0; i<100; i++){
+        c1.increase(1);
+    }
 
     cout << "Contatore 1: " << c1.getValue() << "\n";
     cout << "Contatore 2: " << c2.getValue() << "\n";
