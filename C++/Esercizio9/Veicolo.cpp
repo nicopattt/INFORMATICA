@@ -6,6 +6,8 @@ using namespace std;
 Veicolo::Veicolo(){
     velocita = 0;
     stato_motore = false;
+    marca = "Fiat";
+    modello = "Punto";
 }
 
 string Veicolo::getMarca(){
