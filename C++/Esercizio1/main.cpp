@@ -4,21 +4,26 @@ using namespace std;
 
 class Counter {
 
-    Counter(){
-        cout << "istanza dell'oggetto creata\n";
-        value = 0;
-    }
-    ~Counter(){
-        cout << "oggetto distrutto! \n";
-    }
+    private:
+        int value;
+    
+    public:
 
-    int getValue(){
-        return value;
-    }
-    void increase(int n){
-        value+=n;
-    }
-}
+        Counter(){
+            cout << "istanza dell'oggetto creata\n";
+            value = 0;
+        }
+        ~Counter(){
+            cout << "oggetto distrutto! \n";
+        }
+
+        int getValue(){
+            return value;
+        }
+        void increase(int n){
+            value+=n;
+        }
+};
 
 int main(){
 
