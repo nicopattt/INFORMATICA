@@ -9,7 +9,7 @@ class PowerDevice {
         }
 };
 
-class Scanner: public PowerDevice {
+class Scanner: virtual public PowerDevice {
     public:
         Scanner(int n, int x)
         :PowerDevice(n)
@@ -18,7 +18,7 @@ class Scanner: public PowerDevice {
         }
 };
 
-class Printer: public PowerDevice {
+class Printer: virtual public PowerDevice {
     public:
         Printer(int n, int y)
         :PowerDevice(n)
@@ -30,7 +30,7 @@ class Printer: public PowerDevice {
 class Copier: public Scanner, public Printer {
     public:
         Copier(int n, int x, int y)
-        :Scanner(n, x), Printer(n, y)
+        :Scanner(n, x), Printer(n, y), PowerDevice(n)
         {  
         }
 };
