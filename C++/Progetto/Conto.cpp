@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Conto::Conto(Cliente c, int _saldo){
+Conto::Conto(Cliente::Cliente(c), int _saldo){
     intestatario = c;
     saldo = _saldo;
 }

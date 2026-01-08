@@ -21,7 +21,7 @@ int main(){
         cout << "Scelta: ";
         cin >> scelta;
 
-        switch (scelta) {
+        switch(scelta){
             case 1:
                 cout << "Importo da depositare: ";
                 cin >> importo;
