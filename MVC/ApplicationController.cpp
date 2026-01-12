@@ -19,7 +19,7 @@ ApplicationController::ApplicationController(ApplicationView *v):
 
             switch(scelta)
             {
-			case 0: //semplicemente esegue l'istr. successiva nel main (si dovrebbero invocare i distruttori degli oggetti non più utili)
+			case 0: //semplicemente esegue l'istr. successiva nel main (si dovrebbero invocare i distruttori degli oggetti non piï¿½ utili)
 				exit(0);
 				break;
 
