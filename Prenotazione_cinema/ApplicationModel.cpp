@@ -1,20 +1,19 @@
-//#include "StdAfx.h"
 #include "ApplicationModel.h"
 
 	ApplicationModel::ApplicationModel():
 	mValue(0),Model()
-	{}
-
-	//quando cambia lo stato dell'applicazione, il View va aggiornato
-	void ApplicationModel::loadValue(int value)
 	{
-		mValue=value;
-		notify();//""quando cambia lo stato dell'applicazione"", il View e il Controller vanno aggiornati!!!
-				 //per invocare update() del View e e del Controller
+		for(int i=0; i<15; i++)
+		{
+			for(int j=0; j<15; j++)
+			{
+				posti[i][j] = true;
+			}
+		}
 	}
 
-	//semplice funzione che restituisce il valore
-	int ApplicationModel::getValue()
+	void ApplicationModel::setPrenotazione(int x, int y)
 	{
-		return mValue;
+		posti[x][y] = false;		//imposta il posto selezionato a prenotato
+		notify();					//"quando cambia lo stato dell'applicazione", si invoca notify() per aggiornare il View e il Controller
 	}

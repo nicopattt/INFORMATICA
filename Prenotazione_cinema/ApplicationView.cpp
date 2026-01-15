@@ -12,10 +12,6 @@ void ApplicationView::draw()
 	system("cls");
 	std::cout << std::endl;
 
-/*	std::cout << "  ---------------------------------------------------- " << std::endl;
-	std::cout << "  ID VIEW:"<< this << std::endl;
-	std::cout << "  ---------------------------------------------------- " << std::endl;
-*/
 	std::cout << "  ---------------------------------------------------- " << std::endl;
 	std::cout << " |                   MVC Application                  |" <<std::endl;
 	std::cout << "  ---------------------------------------------------- " << std::endl;
@@ -29,7 +25,3 @@ void ApplicationView::draw()
 
 
 }
-
-//void ApplicationView::initialize(){ controller = makeController();}
-//MVC::Controller* MVC::View::makeController() { return new MVC::Controller(this); }
-
