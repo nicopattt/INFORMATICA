@@ -2,6 +2,9 @@
 #include "ApplicationView.h"
 #include <iostream>
 #include <cstdlib>
+
+using namespace std;
+
 ApplicationView::ApplicationView(ApplicationModel *m):
 	View(m)
 {}
@@ -10,18 +13,18 @@ ApplicationView::ApplicationView(ApplicationModel *m):
 void ApplicationView::draw()
 {
 	system("cls");
-	std::cout << std::endl;
+	cout << endl;
 
-	std::cout << "  ---------------------------------------------------- " << std::endl;
-	std::cout << " |                   MVC Application                  |" <<std::endl;
-	std::cout << "  ---------------------------------------------------- " << std::endl;
-	std::cout << " | COMANDI:   [0]Esci - [1]Incrementa - [2]Decrementa |"<<std::endl;
-	std::cout << "  ---------------------------------------------------- " << std::endl;
-	std::cout << "  -------------- " << std::endl;
-	std::cout << " | VALORE: " <<  ((ApplicationModel*)model)->getValue() <<"\t|" <<std::endl;
-	std::cout << "  -------------- " << std::endl;
-	std::cout << "  ------------------------------ " << std::endl;
-	std::cout << " | INSERIRE il comando scelto: ";
+	cout << "  ---------------------------------------------------- " << endl;
+	cout << " |                Gestione Prenotazioni               |" << endl;
+	cout << "  ---------------------------------------------------- " << endl;
+	cout << " | COMANDI:   [0]Esci - [1]Incrementa - [2]Decrementa |"<< endl;
+	cout << "  ---------------------------------------------------- " << endl;
+	cout << "  -------------- " << endl;
+	cout << " | VALORE: " <<  ((ApplicationModel*)model)->getValue() <<"\t|" << endl;
+	cout << "  -------------- " << endl;
+	cout << "  ------------------------------ " << endl;
+	cout << " | INSERIRE il comando scelto: ";
 
 
 }
