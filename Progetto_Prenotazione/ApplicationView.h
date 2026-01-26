@@ -13,6 +13,8 @@ public:
 
 	void draw();
 	void piantinaPrenotazione();
+	void inserisciFila();
+	void inserisciNumero();
 
 };
 

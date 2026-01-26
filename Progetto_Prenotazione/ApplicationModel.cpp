@@ -34,6 +34,12 @@ int ApplicationModel::getPostiLiberi()
 
 void ApplicationModel::prenota(int x, int y)
 {
-	cinema[x][y] = false;
+	cinema[y][x] = false;
 	posti_liberi--;
+	notify();
+}
+
+bool ApplicationModel::getPosto(int x, int y)
+{
+	return cinema[x][y];
 }

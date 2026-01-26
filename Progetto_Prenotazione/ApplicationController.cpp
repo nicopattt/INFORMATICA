@@ -14,6 +14,8 @@ ApplicationController::ApplicationController(ApplicationView *v):
 void ApplicationController::logic(){
 
 	int scelta=3;
+	int numero;
+	char fila;
 
 	std::cin >> scelta;
 
@@ -24,7 +26,13 @@ void ApplicationController::logic(){
 		break;
 
 	case 1: 
-		((ApplicationModel*)model) -> loadValue(((ApplicationModel*)model)->getValue()+1);
+		((ApplicationView*)view)->piantinaPrenotazione();
+		((ApplicationView*)view)->inserisciFila();
+		std::cin >> fila;
+		((ApplicationView*)view)->inserisciNumero();
+		std::cin >> numero;
+		((ApplicationModel*)model)->prenota(fila-65, numero-1);
+		((ApplicationView*)view)->piantinaPrenotazione();
 		break;
 
 	case 2: 
