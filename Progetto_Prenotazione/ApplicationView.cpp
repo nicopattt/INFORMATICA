@@ -14,11 +14,26 @@ void ApplicationView::draw()
 	system("cls");
 	cout << endl;
 
-	cout << "  ---------------------------------------------------- " << endl;
+	cout << "  --------------------------------------------------- " << endl;
 	cout << " |             Gestione Prenotazioni Cinema           |" << endl;
-	cout << "  ---------------------------------------------------- " << endl;
+	cout << "  --------------------------------------------------- " << endl;
 	cout << " | COMANDI:    [0]Esci  -  [1]Prenota  -  [2]Disdici  |"<< endl;
-	cout << "  ---------------------------------------------------- " << endl;
+	cout << "  --------------------------------------------------- " << endl;
+	cout << "  ------------------------------- " << endl;
+	cout << "   A  B  C  D  E  F  G  H  I  J " << endl;
+	for(int i=0; i<10; i++)
+	{
+		cout << i+1 << " ";
+		for(int j=0; j<10; j++)
+		{
+			if(((ApplicationModel*)model) -> getPosto(i, j) == true)
+				cout << " * ";
+			else
+				cout << " x ";
+		}
+		cout << endl;
+	}
+	cout << "  ------------------------------- " << endl;
 	cout << "  ---------------------- " << endl;
 	cout << " | POSTI LIBERI: " <<  ((ApplicationModel*)model) -> getPostiLiberi() << "\t|" << endl;
 	cout << "  ---------------------- " << endl;
@@ -51,11 +66,17 @@ void ApplicationView::piantinaPrenotazione()
 void ApplicationView::inserisciFila()
 {
 	cout << "  ------------------------------ " << endl;
-	cout << " | INSERIRE la fila: ";
+	cout << " | INSERIRE Il posto (es. B2): ";
 }
 
 void ApplicationView::inserisciNumero()
 {
 	cout << "  ------------------------------ " << endl;
 	cout << " | INSERIRE il numero: ";
+}
+
+void ApplicationView::invio()
+{
+	cout << "  ---------------------------------------------- " << endl;
+	cout << " | Premi un tasto e poi invio per continuare: ";
 }

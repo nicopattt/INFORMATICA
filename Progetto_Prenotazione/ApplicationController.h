@@ -1,8 +1,5 @@
-
 #ifndef APPLICATIONCONTROLLER_H_
 #define APPLICATIONCONTROLLER_H_
-
-
 
 #include "MVC.h"
 #include "ApplicationView.h"
@@ -16,5 +13,4 @@ private:
     //bool isUptoDate;
 	//ApplicationModel * myModel;
 };
-
 #endif

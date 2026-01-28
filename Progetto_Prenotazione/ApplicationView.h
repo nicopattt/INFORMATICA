@@ -1,5 +1,3 @@
-
-
 #ifndef APPLICATIONVIEW_H_
 #define APPLICATIONVIEW_H_
 
@@ -15,7 +13,7 @@ public:
 	void piantinaPrenotazione();
 	void inserisciFila();
 	void inserisciNumero();
+	void invio();
 
 };
-
 #endif
