@@ -43,7 +43,8 @@ void ApplicationController::logic(){
 		break;
 
 	default:
-		((ApplicationModel*)model)->loadValue(((ApplicationModel*)model)->getValue());//non cambia nulla! Si potrebbe segnale un errore dal view
+		std::cout << "Inserisci un valore valido!";
+		((ApplicationModel*)model)->myNotify();
 		break;
 	}
 }

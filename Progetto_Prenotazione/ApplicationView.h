@@ -14,6 +14,7 @@ public:
 	void inserisciFila();
 	void inserisciNumero();
 	void invio();
+	void valido();
 
 };
 #endif

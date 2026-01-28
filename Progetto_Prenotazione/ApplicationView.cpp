@@ -19,6 +19,8 @@ void ApplicationView::draw()
 	cout << "  --------------------------------------------------- " << endl;
 	cout << " | COMANDI:    [0]Esci  -  [1]Prenota  -  [2]Disdici  |"<< endl;
 	cout << "  --------------------------------------------------- " << endl;
+	cout << "  * = posto libero " << endl;
+	cout << "  x = posto occupato " << endl;
 	cout << "  ------------------------------- " << endl;
 	cout << "   A  B  C  D  E  F  G  H  I  J " << endl;
 	for(int i=0; i<10; i++)
@@ -79,4 +81,10 @@ void ApplicationView::invio()
 {
 	cout << "  ---------------------------------------------- " << endl;
 	cout << " | Premi un tasto e poi invio per continuare: ";
+}
+
+void ApplicationView::valido()
+{
+	cout << "  ---------------------------------------------- " << endl;
+	cout << " | Inserisci un valore valido! ";
 }
