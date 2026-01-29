@@ -22,14 +22,14 @@ int ApplicationModel::getPostiLiberi()
 
 void ApplicationModel::prenota(int x, int y)
 {
-	cinema[y][x] = false;
+	cinema[x][y] = false;
 	posti_liberi--;
 	notify();
 }
 
 void ApplicationModel::disdici(int x, int y)
 {
-	cinema[y][x] = true;
+	cinema[x][y] = true;
 	posti_liberi++;
 	notify();
 }

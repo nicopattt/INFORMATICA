@@ -70,21 +70,3 @@ void ApplicationView::inserisciFila()
 	cout << "  ------------------------------ " << endl;
 	cout << " | INSERIRE Il posto (es. B2): ";
 }
-
-void ApplicationView::inserisciNumero()
-{
-	cout << "  ------------------------------ " << endl;
-	cout << " | INSERIRE il numero: ";
-}
-
-void ApplicationView::invio()
-{
-	cout << "  ---------------------------------------------- " << endl;
-	cout << " | Premi un tasto e poi invio per continuare: ";
-}
-
-void ApplicationView::valido()
-{
-	cout << "  ---------------------------------------------- " << endl;
-	cout << " | Inserisci un valore valido! ";
-}
