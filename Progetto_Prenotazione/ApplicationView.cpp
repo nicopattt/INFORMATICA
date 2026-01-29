@@ -68,5 +68,5 @@ void ApplicationView::piantinaPrenotazione()
 void ApplicationView::inserisciFila()
 {
 	cout << "  ------------------------------ " << endl;
-	cout << " | INSERIRE Il posto (es. B2): ";
+	cout << " | INSERIRE Il posto CON LA LETTERA MAIUSCOLA (es. B2): ";
 }
